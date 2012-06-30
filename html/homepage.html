@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap, from Twitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Debt App</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a href="#">Home</a></li>
+			  <li class="divider-vertical"></li>
+              <li><a href="#about">About</a></li>
+			  <li class="divider-vertical"></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+			<ul class="nav pull-right">
+			  <li><a data-toggle="modal" href="#registrationModal">Sign Up</a></li>
+			  <li class="divider-vertical"></li>
+			  <li class="dropdown">
+				<a class="dropdown-toggle" id="login" href="#" data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
+				<div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+				  <!-- Login form here -->
+				<form id="myForm" action="[YOUR ACTION]" method="post" accept-charset="UTF-8">
+					<input id="user_username" style="margin-bottom: 15px;" type="text" placeholder="Username" name="user[username]" size="30" />
+					<input id="user_password" style="margin-bottom: 15px;" type="password" placeholder="Password" name="user[password]" size="30" />
+					<input id="user_remember_me" style="float: left; margin-right: 10px;" type="checkbox" name="user[remember_me]" value="1" />
+					<label class="string optional" for="user_remember_me"> Remember me</label>
+ 
+					<input class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Sign In" />
+				</form>
+				</div>
+			  </li>
+			</ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+	
+	<!-- Registration modal, Hidden by default -->
+	<div class="modal hide fade" id="registrationModal">
+	  <div class="modal-header">
+		<a class="close" data-dismiss="modal">x</a>
+		<h3>Sign up to use DebtApp</h3>
+	  </div>
+	  <div class="modal-body">
+		<!--Registration form-->
+		<form id="myForm" action="[YOUR ACTION]" method="post" accept-charset="UTF-8">
+			<ul class="nav nav-list">
+			<li>
+				<input class="input" id="user_username" type="text" placeholder="Username" name="user[username]" size="30" />
+			</li>
+			<li>
+				<input class="input" id="user_password" type="password" placeholder="Password" name="user[password]" size="30" />
+			</li>
+			<li>
+				<input class="input" id="user_passwordConfirm" type="password" placeholder="Re-enter Password" name="user[passwordConfirm]" size="30" />
+			</li>
+			</ul>
+		</form>
+	  </div>
+	  <div class="modal-footer">
+		<a href="#" class="btn" data-dismiss="modal">Close</a>
+		<a href="#" class="btn btn-primary">Register</a>
+	  </div>
+	</div> <!-- end registration Modal -->
+
+    <div class="container-fluid">
+		<div class="row-fluid">
+			
+			<div class="span12">
+				<div class="hero-unit">
+
+				<h1>Welcome!</h1>
+				<p>This application will manage debts between friends.<br> Sign in or create an account to get started.</p>
+				</div>
+			</div>
+		</div>
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+	<script src="../javascript/welcome_page.js"></script>
+
+  </body>
+</html>
