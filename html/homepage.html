@@ -77,28 +77,28 @@
 		<h3>Sign up to use DebtApp</h3>
 	  </div>
     <!--Registration form-->
-    <form id="myForm" action="../assets/php/registration.php" method="post" accept-charset="UTF-8">
+    <!--<form id="myForm" action="../assets/php/registration.php" method="post" accept-charset="UTF-8">-->
 	  <div class="modal-body">
 			<ul class="nav nav-list">
 			<li>
-        <input class="input" id="user_email" type="text" placeholder="Email" name="user[email]" size="30" />
+        <input class="input" id="register_email" type="text" placeholder="Email" name="register[email]" size="30" />
       </li>
       <li>
-				<input class="input" id="user_username" type="text" placeholder="Username" name="user[username]" size="30" />
+				<input class="input" id="register_username" type="text" placeholder="Username" name="register[username]" size="30" />
 			</li>
 			<li>
-				<input class="input" id="user_password" type="password" placeholder="Password" name="user[password]" size="30" />
+				<input class="input" id="register_password" type="password" placeholder="Password" name="register[password]" size="30" />
 			</li>
 			<li>
-				<input class="input" id="user_passwordConfirm" type="password" placeholder="Re-enter Password" name="user[passwordConfirm]" size="30" />
+				<input class="input" id="register_passwordConfirm" type="password" placeholder="Re-enter Password" name="register[passwordConfirm]" size="30" />
 			</li>
 			</ul>	
 	  </div>
 	  <div class="modal-footer">
 		<a href="#" class="btn" data-dismiss="modal">Close</a>
-    <input type="submit" class="btn btn-primary" name="register" value="Register" />
+    <input id="register-button" type="submit" class="btn btn-primary" name="register" value="Register" />
 	  </div>
-    </form>
+    <!--</form>-->
 	</div> <!-- end registration Modal -->
 
     <div class="container-fluid">
@@ -130,7 +130,8 @@
     <script src="../assets/js/bootstrap-collapse.js"></script>
     <script src="../assets/js/bootstrap-carousel.js"></script>
     <script src="../assets/js/bootstrap-typeahead.js"></script>
-	<script src="../javascript/welcome_page.js"></script>
+	  <script src="../javascript/welcome_page.js"></script>
+    <script src="../javascript/registration.js"></script>
 
   </body>
 </html>
