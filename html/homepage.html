@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap, from Twitter</title>
+    <title>Debt App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="aaur">
 
     <!-- Le styles -->
     <link href="../assets/css/bootstrap.css" rel="stylesheet">
@@ -55,7 +55,7 @@
 				<div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
 				  <!-- Login form here -->
 				<form id="myForm" action="[YOUR ACTION]" method="post" accept-charset="UTF-8">
-					<input id="user_username" style="margin-bottom: 15px;" type="text" placeholder="Username" name="user[username]" size="30" />
+          <input id="user_username" style="margin-bottom: 15px;" type="text" placeholder="Username" name="user[username]" size="30" />
 					<input id="user_password" style="margin-bottom: 15px;" type="password" placeholder="Password" name="user[password]" size="30" />
 					<input id="user_remember_me" style="float: left; margin-right: 10px;" type="checkbox" name="user[remember_me]" value="1" />
 					<label class="string optional" for="user_remember_me"> Remember me</label>
@@ -76,11 +76,14 @@
 		<a class="close" data-dismiss="modal">x</a>
 		<h3>Sign up to use DebtApp</h3>
 	  </div>
+    <!--Registration form-->
+    <form id="myForm" action="../assets/php/registration.php" method="post" accept-charset="UTF-8">
 	  <div class="modal-body">
-		<!--Registration form-->
-		<form id="myForm" action="[YOUR ACTION]" method="post" accept-charset="UTF-8">
 			<ul class="nav nav-list">
 			<li>
+        <input class="input" id="user_email" type="text" placeholder="Email" name="user[email]" size="30" />
+      </li>
+      <li>
 				<input class="input" id="user_username" type="text" placeholder="Username" name="user[username]" size="30" />
 			</li>
 			<li>
@@ -89,13 +92,13 @@
 			<li>
 				<input class="input" id="user_passwordConfirm" type="password" placeholder="Re-enter Password" name="user[passwordConfirm]" size="30" />
 			</li>
-			</ul>
-		</form>
+			</ul>	
 	  </div>
 	  <div class="modal-footer">
 		<a href="#" class="btn" data-dismiss="modal">Close</a>
-		<a href="#" class="btn btn-primary">Register</a>
+    <input type="submit" class="btn btn-primary" name="register" value="Register" />
 	  </div>
+    </form>
 	</div> <!-- end registration Modal -->
 
     <div class="container-fluid">
