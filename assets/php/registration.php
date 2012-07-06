@@ -1,7 +1,7 @@
 <?php //Associated with homepage.html registration
 $host="localhost"; // Host name 
 $dbusername="root"; // Mysql username 
-$sqlpass="";
+$sqlpass="bosporus";
 $encrypt_password=""; //Encrypted password
 $db_name="debtapp"; // Database name 
 $tbl_name="users"; // Table name
