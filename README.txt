@@ -1,0 +1,4 @@
+----DEBTAPP----
+This is a web application I am making to help a group of friends manage money owed. The idea for this came from living in an apartment with three other guys. We would owe each other money for utiltiies, groceries, gas, and a bunch of various other things. Eventually, all of these items became hard to track over time. We had tried creating an Excel spreadsheet and a Google Doc, but they all seemed unintuitive. 
+
+The idea of this application is that everyone will be able to create an account and then add people to a group. For instance, my three roommates and I would all create accounts and add each other as "friends" on the site. Then, we would be able to submit a transaction to the server, noting who owes who, the amount, a short description, and the date. This would notify all parties involved that they owe money. This allows for conflicts to be settled offline if there is a discrepancy. 
