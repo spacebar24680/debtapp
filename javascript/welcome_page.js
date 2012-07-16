@@ -1,6 +1,6 @@
 //Associated with homepage.html
 
-//$('login').dropdown();
+$('login').dropdown();
 
 //To prevent dropdown from disappearing after clicking within it
 //Might need to change to add IE support

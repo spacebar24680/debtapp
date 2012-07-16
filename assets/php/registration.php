@@ -1,9 +1,14 @@
 <?php //Associated with homepage.html registration
-$host="localhost"; // Host name 
-$dbusername="root"; // Mysql username 
-$sqlpass="bosporus";
+
+// include db access variables
+include 'utilities/config.php';
+include 'utilities/MySQL.php';
+
+// Connect to the database
+$sql = new MySQL();
+
 $encrypt_password=""; //Encrypted password
-$db_name="debtapp"; // Database name 
+
 $tbl_name="users"; // Table name
 
 // Get the values from the registration form.
@@ -74,12 +79,13 @@ if($dieFlag == 1){
 }
 
 // Connect to the database
-$conn = mysql_connect("$host", "$dbusername", "$sqlpass")or die("cannot connect"); 
- mysql_select_db("$db_name")or die("cannot select DB");
+//$conn = mysql_connect("$MYSQL_HOST", "$MYSQL_USER", "$MYSQL_PASS")or die("cannot connect"); 
+//mysql_select_db("$MYSQL_NAME")or die("cannot select DB");
 
 //check for duplicate username
 $query = "SELECT `username` FROM $tbl_name WHERE `username`='$username'";
-$result = mysql_query($query);
+//$result = mysql_query($query);
+$result = $sql->executeSQL($query);
 $rows = mysql_num_rows($result);
 if($rows > 0)
 {
@@ -92,7 +98,8 @@ else //it's ok to add it because it's unique
 	// Insert it into the database.
 	$query = "INSERT INTO $tbl_name ( email, username, password, salt )
 		VALUES ( '$email', '$username' , '$hash' , '$salt' );";
-	mysql_query($query) or die ("error here");
+	//mysql_query($query) or die ("error here");
+	$sql->executeSQL($query);
 	echo json_encode(array("returnvalue"=>""));
 
 }
